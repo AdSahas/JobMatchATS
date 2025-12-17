@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Match Result</title>
+</head>
+<body>
+    <h1>Match Results</h1>
+
+    <h2>Matched Skills</h2>
+    <ul>
+    {% for job_skill, cv_skill, score in matched_skills %}
+        <li>{{ job_skill }} → {{ cv_skill }} ({{ "%.2f"|format(score) }})</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Missing Skills</h2>
+    <ul>
+    {% for skill in unmatched_skills %}
+        <li>{{ skill }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Final Match Score: {{ final_score }}</h2>
+
+    <a href="/">Go Back</a>
+</body>
+</html>

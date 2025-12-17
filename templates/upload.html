@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Matcher</title>
+    <link rel="stylesheet" type="text/css" href="/static/upload.css">
+</head>
+<body>
+    <h1>JobMatch : Upload the CV and Paste the Job Description</h1>
+
+    <form action="/match-html" method="post" enctype="multipart/form-data">
+        <label align="center">Upload CV (PDF):</label><br>
+        <input type="file" name="cv_file" align="center"><br><br>
+
+        <label align="center">Job Description:</label><br>
+        <textarea name="job_text" rows="10" cols="10"></textarea><br><br>
+
+        <button type="submit">Match</button>
+    </form>
+</body>
+</html>

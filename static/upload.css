@@ -1,0 +1,58 @@
+/* Make the upload form look nicer */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type="file"] {
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+button {
+    padding: 10px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    align-self: center;
+}
+button:hover {
+    background: #4cae4c;
+    width: 110px;
+    align-self: center;
+}
+
+textarea {
+    margin-bottom: 20px;
+    align-self: center;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 60%
+}
